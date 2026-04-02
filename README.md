@@ -32,31 +32,31 @@ O **Consulta Certa** nasceu de uma necessidade latente: eliminar as barreiras qu
 
 | ID | Descrição do Requisito | Eu como... | Quero/Desejo/Preciso | Para... | Responsável | Página |
 |:---:|:---|:---:|:---|:---|:---:|:---:|
-| **RF-01** | Permitir o cadastro de usuários | Paciente | Realizar meu cadastro (CRUD) (incluir, consultar/pesquisar, alterar, deletar) | Ter acessos às funcionalidades do sistema e gerenciar minhas informações pessoais | Lorena | Cadastro |
-| **RF-02** | Permitir cadastro de profissional de saúde. | Profissional de saúde|Realizar meu cadastro – (CRUD) (incluir, consultar/pesquisar, alterar, deletar)| Divulgar meu trabalho, captar clientes e aumentar renda. | Lorena | Cadastro |
-| **RF-03** |Exibir a agenda de consultas e exames do paciente| Paciente ou Profissional de saúde| Visualizar os dados de consultas e possíveis exames dos pacientes.|Se manter informado e se planejar para os próximos encontros com os médicos. |  | Inicial |
-| **RF-04** |Informar o tipo de atendimento, data, horário, local e unidade responsável| Paciente | Visualizar informações mais específicas sobre as consultas como horário, tipo do atendimento e local.|Se manter informado e se planejar para os próximos encontros com os médicos | Emily | |
-| **RF-05** |Enviar notificações com lembretes sobre consultas e exames agendados| Paciente| Ser lembrado acerca dos compromissos hospitalares sem necessariamente precisar abrir o aplicativo.|Diminuir as chances de esquecimentos dos dados das consultas e exames| Gabriel | Configurações/Api |
+| **RF-01** | Permitir o cadastro de usuários do tipo 'paciente' | Paciente | Realizar meu cadastro (CRUD) (incluir, consultar/pesquisar, alterar, deletar) | Ter acessos às funcionalidades do sistema e gerenciar minhas informações pessoais | Lorena | Cadastro |
+| **RF-02** | Permitir cadastro de usuários do tipo 'profissional de saúde'. | Profissional de saúde|Realizar meu cadastro – (CRUD) (incluir, consultar/pesquisar, alterar, deletar)| Divulgar meu trabalho, captar clientes e aumentar renda. | Lorena | Cadastro |
+| **RF-03** |Permitir a visualização de quais serão as consultas marcadas| Paciente | Visualizar quais serão as próximas consultas que me aguardam.|Se manter informado. |  | Inicial |
+| **RF-04** |Permitir a visualização de informações referentes a consulta| Paciente | Visualizar informações mais específicas sobre as consultas.|Se manter informado e se planejar para os próximos encontros com os médicos | Emily | |
+| **RF-05** |Enviar notificações em rempo real sobre alterações nos agendamentos| Paciente| Ser lembrado acerca dos compromissos hospitalares sem necessariamente precisar abrir o aplicativo.|Diminuir as chances de esquecimentos dos dados das consultas e exames| Gabriel | Configurações/Api |
 | **RF-06** |Exibir orientações sobre documentos necessários e preparo para exames.| Paciente| Visualizar as orientações.| Se antecipar para o caso de jejuns necessários para exames e para providenciar documentos.| | |
 | **RF-07** |Permitir a confirmação de presença no atendimento.| Paciente |Confirmar minha presença a consulta.| Atualizar o status do agendamento e evitar marcação indevida de falta (absenteísmo). | Emily | Config |
-| **RF-08** | Permitir o informe de cancelamento. | Paciente | Cancelar minha presença a consulta. | Informar sobre o meu não comparecimento na consulta sem precisar ir até a instituição fisicamente.| Kauan | |
-| **RF-09** | Armazenar o histórico de atendimentos, consultas, exames e faltas.| Paciente ou Profissional |Acessar registros de eventos médicos e administrativos passados. |Ter uma visão completa da jornada do paciente e auxiliar na tomada de decisão clínica.| Gabriel |Prontuário / Histórico|
-| **RF-10** | O sistema deve disponibilizar um painel administrativo com relatórios de agendamentos, confirmações, cancelamentos e faltas. | Profissional de saúde |Visualizar os  dados de cada paciente  pertinentes a mim.|Ter uma base dados para me | ||
-| **RF-11** | O sistema deve ter um tamanho de fonte ajustável. | Paciente |Facilitar a visualização das informações | Facilitar a visualização das informações.| Kauan |Todas|
-| **RF-12** |O sistema deve permitir o envio de documentos digitais relacionados ao atendimento. | Paciente ou Profissional|Realizar o upload de exames, receitas e laudos (PDF/Imagens).|Centralizar o histórico médico e facilitar a consulta durante o atendimento.| Luiz Gustavo | |
-| **RF-13** | O sistema deve permitir notificações em tempo real sobre alterações nos agendamentos.| Paciente ou Profissional| Receber alertas imediatos sobre confirmações, cancelamentos ou atrasos.|Evitar desencontros e manter a agenda sempre atualizada para ambas as partes.| | |
-| **RF-14** |O sistema deve permitir integração futura com sistemas do SUS. | Administrador |Estruturar os dados conforme padrões de interoperabilidade de saúde. |Garantir que os dados possam ser partilhados com a rede pública no futuro.|Luiz Gustavo||
+| **RF-08** | Realizar cancelamento. | Paciente | Cancelar minha presença a consulta. | Informar sobre o meu não comparecimento na consulta sem precisar ir até a instituição fisicamente.| Kauan | |
+| **RF-09** | Exibir histórico.| Paciente/Profissional de saúde |Acessar registros de eventos médicos e administrativos passados. |Ter uma visão completa da jornada do paciente e auxiliar na tomada de decisão clínica.| Gabriel |Página inicial/agendamento específico|
+| **RF-10** | Permitir que usuários do tipo 'profissional de saúde' adicione/edite um atendimento. | Profissional de saúde |Fornecer os dados necessários para manter o paciente informado.|Abastecer a página inicial do paciente | ||
+| **RF-11** | Permitir que o usuário ajuste o tamanho da fonte. | Paciente/Profissional de saúde |Facilitar a visualização das informações | Facilitar a visualização das informações.| Kauan |Todas|
+| **RF-12** |Permitir o envio de documentos digitais relacionados ao atendimento. | Profissional de saúde|Realizar o upload de exames, receitas e laudos (PDF/Imagens).|Centralizar o histórico médico e facilitar a consulta durante o atendimento.| Luiz Gustavo | |
+| **RF-13** | Permitir a visualização dos agendamentos na forma de uma agenda/calendário.| Paciente ou Profissional de saúde| Receber alertas imediatos sobre confirmações, cancelamentos ou atrasos.|Evitar desencontros e manter a agenda sempre atualizada para ambas as partes.| | |
+| **RF-14** |Permitir que os usuários realizem busca. | Paciente/Profissional de saúde |Encontrar algum atendimento já passado. |Conferir informações não tão rescentes.|Luiz Gustavo|Todos|
 ---
 
 ## ⚙️ Requisitos Não Funcionais (RNF)
 
 | ID | Descrição | Prioridade |
 |:---:|:---|:---:|
-| **RNF-01**|O sistema deve apresentar uma interface clara, com organização lógica das informações, uso de ícones compreensíveis, botões bem identificados e navegação simples, permitindo que qualquer usuário, mesmo com pouca experiência tecnológica, consiga utilizar o sistema sem dificuldade. | **ALTA** |
-| **RNF-02**| O sistema deve ser totalmente responsivo, adaptando automaticamente sua interface para diferentes dispositivos e tamanhos de tela, incluindo smartphones, tablets e computadores, sem perda de funcionalidade ou legibilidade. | **Médio** |
-| **RNF-03**| O sistema deve utilizar linguagem simples, direta e de fácil compreensão, evitando termos técnicos complexos, para garantir que usuários de diferentes níveis de escolaridade consigam entender todas as informações e instruções apresentadas.| **Médio** |
-| **RNF-04**| O sistema deve garantir acessibilidade visual, incluindo:<br>• uso de cores com alto contraste;<br>• fontes legíveis e de tamanho adequado;<br>• suporte a leitores de tela;<br>• opção de modo claro e modo escuro para melhor adaptação à iluminação do ambiente e conforto do usuário.| **ALTA** |
-| **RNF-05**| O sistema deve garantir a proteção dos dados dos usuários por meio de autenticação segura, controle de acesso por perfis (paciente, familiar, administrador e unidade de saúde) e uso de protocolos de criptografia (HTTPS), assegurando a privacidade e integridade das informações. | **ALTA** |
+| **RNF-01**|O sistema deve suportar múltiplos usuários simultâneos (exemplo: 1000 acessos). | **ALTA** |
+| **RNF-02**| O sistema deve funcionar nos seguintes navegadores: Chrome, Edge e Firefox. | **Médio** |
+| **RNF-03**| O sistema deve carregar em até 3 segundos.| **Médio** |
+| **RNF-04**| O sistema deve Permitir ajuste de tamanho de fonte sem perda de funcionalidade ou legibilidade.| **ALTA** |
+| **RNF-05**| O sistema deve garantir a proteção dos dados dos usuários, controle de acesso por perfis (paciente e profissional de saúde) e uso de protocolos de criptografia (HTTPS), assegurando a privacidade e integridade das informações. | **ALTA** |
 
 ---
 
